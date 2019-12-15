@@ -20,12 +20,12 @@ from email.utils import COMMASPACE, formatdate
 import MySQLdb
 
 #Uploaded files destination
-UPLOAD_FOLDER =r'/home/dotun/Desktop/flask-stego'
+UPLOAD_FOLDER =r'/home/segun/Desktop/flask-stego'
 app = Flask(__name__)
 
 # This configuration is for allowing all media types to be upload using flask-upload module
 #all_files=UploadSet('media',ALL,default_dest=lambda x: 'media')
-#app.config['UPLOADED_ALL_DEST']= r"C:\Users\Steve Power\PycharmProjects\flask-stego"
+
 
 # Project app secret for session security
 app.secret_key = "SECretK1Y"
@@ -53,7 +53,7 @@ def encrypt():
 
 def send_mail(send_to, subject, files=None):
     gmail_user = 'steganograpgyteam.demo@gmail.com '
-    gmail_password = 'Adeosun3211'
+    gmail_password = 'password'
 
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
