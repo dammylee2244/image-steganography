@@ -14,7 +14,7 @@
 
 # Installation
 * Follow these steps to clone and run this application on your local system.
-* git clone https://github.com/dotsoks/flask-stego.git
+* git clone https://github.com/dammylee2244/image-steganography.git
 * pip3 install -r requirements.txt
 * In app.py file, edit this variable and enter your current project directory. 
 ```angular2
